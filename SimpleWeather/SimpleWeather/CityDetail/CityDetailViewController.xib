@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="dark"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CityDetailViewController" customModule="SimpleWeather" customModuleProvider="target">
+            <connections>
+                <outlet property="currentTempLabel" destination="5lo-0c-1cK" id="yt9-mM-R1Y"/>
+                <outlet property="descriptionLabel" destination="UHh-3l-Flm" id="8X7-g1-Wit"/>
+                <outlet property="minMaxLabel" destination="add-X7-wCC" id="tL0-eQ-1a9"/>
+                <outlet property="nextDaysTableView" destination="19f-6O-kRZ" id="khT-6d-eXr"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+                <outlet property="weatherIconImg" destination="TYw-ww-Mta" id="O8T-tJ-duY"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5lo-0c-1cK">
+                    <rect key="frame" x="70.333333333333314" y="109" width="102.66666666666669" height="82.666666666666686"/>
+                    <fontDescription key="fontDescription" type="system" weight="thin" pointSize="70"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Sun" translatesAutoresizingMaskIntoConstraints="NO" id="TYw-ww-Mta">
+                    <rect key="frame" x="232.66666666666663" y="111.33333333333331" width="78" height="78"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="78" id="4Im-qr-WK4"/>
+                        <constraint firstAttribute="height" constant="78" id="lYK-7p-F9b"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHh-3l-Flm">
+                    <rect key="frame" x="178" y="225" width="37.333333333333343" height="18"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="min: 15º · max: 20º" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="add-X7-wCC">
+                    <rect key="frame" x="136.33333333333334" y="251.66666666666663" width="120.66666666666666" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="In the next few days..." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X8X-mw-jEC">
+                    <rect key="frame" x="16" y="304.66666666666669" width="165.66666666666666" height="19.333333333333314"/>
+                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="19f-6O-kRZ">
+                    <rect key="frame" x="0.0" y="334" width="393" height="518"/>
+                    <color key="backgroundColor" name="CellBackgroundColor"/>
+                    <inset key="separatorInset" minX="15" minY="0.0" maxX="0.0" maxY="0.0"/>
+                </tableView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" name="AppBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="X8X-mw-jEC" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="3PT-PM-5cl"/>
+                <constraint firstItem="19f-6O-kRZ" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="9Vm-cG-3Ol"/>
+                <constraint firstItem="add-X7-wCC" firstAttribute="top" secondItem="5lo-0c-1cK" secondAttribute="bottom" constant="60" id="Gwx-Ln-bVM"/>
+                <constraint firstItem="TYw-ww-Mta" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="75" id="Mwc-OL-3HY"/>
+                <constraint firstItem="X8X-mw-jEC" firstAttribute="top" secondItem="add-X7-wCC" secondAttribute="bottom" constant="36" id="Q9c-90-Edq"/>
+                <constraint firstItem="TYw-ww-Mta" firstAttribute="centerY" secondItem="5lo-0c-1cK" secondAttribute="centerY" id="QCA-2l-CFg"/>
+                <constraint firstItem="5lo-0c-1cK" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" constant="-75" id="RPY-FY-fam"/>
+                <constraint firstItem="add-X7-wCC" firstAttribute="top" secondItem="UHh-3l-Flm" secondAttribute="bottom" constant="8.6666666666666572" id="Vyi-hy-KVT"/>
+                <constraint firstItem="19f-6O-kRZ" firstAttribute="top" secondItem="X8X-mw-jEC" secondAttribute="bottom" constant="10" id="ZTg-2w-fAp"/>
+                <constraint firstItem="UHh-3l-Flm" firstAttribute="centerX" secondItem="add-X7-wCC" secondAttribute="centerX" id="dYC-Tz-CUF"/>
+                <constraint firstItem="5lo-0c-1cK" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="50" id="eOE-5B-RFO"/>
+                <constraint firstItem="add-X7-wCC" firstAttribute="centerX" secondItem="fnl-2z-Ty3" secondAttribute="centerX" id="gvU-p9-Tcd"/>
+                <constraint firstAttribute="bottom" secondItem="19f-6O-kRZ" secondAttribute="bottom" id="o45-Q7-NIX"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="19f-6O-kRZ" secondAttribute="trailing" id="v40-6b-eoP"/>
+            </constraints>
+            <point key="canvasLocation" x="43.511450381679388" y="20.422535211267608"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="Sun" width="95.019500732421875" height="95.190399169921875"/>
+        <namedColor name="AppBackgroundColor">
+            <color red="0.74901960784313726" green="0.88235294117647056" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="CellBackgroundColor">
+            <color red="0.074509803921568626" green="0.2627450980392157" blue="0.41176470588235292" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

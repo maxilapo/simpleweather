@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Bucket
+   uuid = "EF9DF986-CF45-4A60-813E-8D64B3796B5D"
+   type = "1"
+   version = "2.0">
+   <Breakpoints>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "48809118-ADC6-4FEA-9732-FBBBFE095F9B"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleWeather/CacheManager.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
+            landmarkName = "getCache(for:)"
+            landmarkType = "7">
+            <Locations>
+               <Location
+                  uuid = "48809118-ADC6-4FEA-9732-FBBBFE095F9B - f721e9f7128e24b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleWeather.CacheManager.getCache() -&gt; Swift.Optional&lt;SimpleWeather.CityWeather&gt;"
+                  moduleName = "SimpleWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Maxime/Projets/SimpleWeather/SimpleWeather/CacheManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "876">
+               </Location>
+               <Location
+                  uuid = "48809118-ADC6-4FEA-9732-FBBBFE095F9B - f721e9f7128e24b0"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleWeather.CacheManager.getCache() -&gt; Swift.Optional&lt;SimpleWeather.CityWeather&gt;"
+                  moduleName = "SimpleWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Maxime/Projets/SimpleWeather/SimpleWeather/CacheManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "1000">
+               </Location>
+               <Location
+                  uuid = "48809118-ADC6-4FEA-9732-FBBBFE095F9B - 58a45d9f9bc43733"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "SimpleWeather.CacheManager.getCache(for: Swift.Int) -&gt; Swift.Optional&lt;SimpleWeather.CityWeather&gt;"
+                  moduleName = "SimpleWeather"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/Maxime/Projets/SimpleWeather/SimpleWeather/CacheManager.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "47"
+                  endingLineNumber = "47"
+                  offsetFromSymbolStart = "904">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9B2A0EB7-D446-4FA9-9E1E-5F2D0A607CC5"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "SimpleWeather/DataFetcherProtocol.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "9"
+            endingLineNumber = "9"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+   </Breakpoints>
+</Bucket>
