@@ -17,3 +17,13 @@ The app is built using the MVVM pattern. The interface is designed with AutoLayo
 
 The application is not perfect, but I plan to continue improving it gradually.
 
+
+## Screenshots
+
+![SimpleWeatherScreenshot](https://github.com/maxilapo/simpleweather/assets/3606588/4b753c74-0dcb-413f-bc14-fd6177062224)
+
+## Future improvements
+* Improve colors for light mode
+* Use NSMeasurement to handle Celcius/Fahrenheit conversion
+* Use location SDK to propose close city to the user
+* Let the user toggle favorite on cities so they stay on top
