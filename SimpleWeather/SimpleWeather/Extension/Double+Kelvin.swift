@@ -16,19 +16,19 @@ extension Double {
 
     /// Convert from Kelvin to Celcius and return it as a String
     var celcius: String {
-        let roundedValue = (self - 273.15).rounded()
 
-        // MeasurementFormatter
-        let celcius = roundedValue == -0.0 ? 0.0 : roundedValue
+        let kelvinMeasurement = Measurement(value: self, unit: UnitTemperature.kelvin)
+        let celciusValue = kelvinMeasurement.converted(to: .celsius).value.rounded()
 
-        return String(format: "%.0f", celcius)
+        return String(format: "%.0f", celciusValue)
     }
     
     /// Convert from Kelvin to Fahrenheit and return it as a String
     var fahrenheit: String {
-        let roundedValue = ((self - 273.15) * 9/5 + 32).rounded()
-        let fahr = roundedValue == -0.0 ? 0.0 : roundedValue
 
-        return String(format: "%.0f", fahr)
+        let kelvinMeasurement = Measurement(value: self, unit: UnitTemperature.kelvin)
+        let fahrenheitValue = kelvinMeasurement.converted(to: .fahrenheit).value.rounded()
+        
+        return String(format: "%.0f", fahrenheitValue)
     }
 }
